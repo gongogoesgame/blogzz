@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+    <head>
+        <title>{{title}}</title>
+        <style>
+            *{
+                font-family: 'Times New Roman', Times, serif;
+            }
+            .error {
+                color: red;
+            }
+
+            .link_button { 
+                background: none;
+                border: none;
+                text-decoration: underline;
+                cursor: pointer; 
+                font-size: 1.065em;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <div>
+                <table>
+                    <tr>
+                        <td> <a href= '/blog'> Home </a> </td>
+                        <td> <a href= '/UserPage'> Users </a> </td>
+                        <td> <a href= '/add'> Add a blog post </a> </td>
+                        <td> <a href= '/login'> Login </a> </td>
+                        <td> <a href= '/logout'> Logout </a> </td>
+                        <td> <a href= '/register'> Register </a> </td> 
+                    </tr>
+                </table>
+            </div>
+        </header>
+        <br>
+        <main>
+
+            {% block content %}
+
+            {% endblock %}
+
+        </main>
+        <br>
+    </body>
+</html>
